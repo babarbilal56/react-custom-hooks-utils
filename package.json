@@ -1,0 +1,39 @@
+{
+    "name": "react-custom-hooks",
+    "version": "1.0.0",
+    "description": "react-native-smooth-scroll is a React Native library that enhances scrolling experiences by providing smooth, frictionless, and customizable scrolling for lists and views. It improves performance and usability, ensuring seamless gestures and animations for a more native feel",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no tests specified\" && exit 1"
+    },
+    "keywords": [
+        "react-native",
+        "smooth-scroll",
+        "scroll-animation",
+        "gesture-handler",
+        "scroll-view",
+        "flatlist",
+        "virtualized-list",
+        "scroll-performance",
+        "elastic-scroll",
+        "scroll-to-top",
+        "parallax-scroll",
+        "momentum-scroll",
+        "auto-scroll",
+        "scroll-events",
+        "friction-scroll"
+    ],
+    "author": "Babar Bilal",
+    "license": "MIT",
+    "peerDependencies": {
+      "react-native": ">=0.60.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/babarbilal56/react-custom-hooks.git"
+    },
+    "bugs": {
+      "url": "https://github.com/babarbilal56/react-custom-hooks/issues"
+    },
+    "homepage": "https://github.com/babarbilal56/react-custom-hooks#readme"
+  }
