@@ -1,39 +1,39 @@
 {
-    "name": "react-custom-hooks",
-    "version": "1.0.0",
-    "description": "react-native-smooth-scroll is a React Native library that enhances scrolling experiences by providing smooth, frictionless, and customizable scrolling for lists and views. It improves performance and usability, ensuring seamless gestures and animations for a more native feel",
+    "name": "react-custom-hooks-utils",
+    "version": "1.0.2",
+    "description": "This library contains a collection of reusable React custom hooks to simplify state management, side effects, and user interactions.",
     "main": "index.js",
     "scripts": {
-      "test": "echo \"Error: no tests specified\" && exit 1"
+        "test": "echo \"Error: no tests specified\" && exit 1"
     },
     "keywords": [
-        "react-native",
-        "smooth-scroll",
-        "scroll-animation",
-        "gesture-handler",
-        "scroll-view",
-        "flatlist",
-        "virtualized-list",
-        "scroll-performance",
-        "elastic-scroll",
-        "scroll-to-top",
-        "parallax-scroll",
-        "momentum-scroll",
-        "auto-scroll",
-        "scroll-events",
-        "friction-scroll"
+        "react",
+        "react hooks",
+        "custom hooks",
+        "useFetch",
+        "useLocalStorage",
+        "useToggle",
+        "useDebounce",
+        "useWindowSize",
+        "usePrevious",
+        "useClickOutside",
+        "useHover",
+        "useTimeout",
+        "useForm",
+        "Each",
+        "custom react hooks"
     ],
     "author": "Babar Bilal",
     "license": "MIT",
     "peerDependencies": {
-      "react-native": ">=0.60.0"
+        "react-native": ">=0.60.0"
     },
     "repository": {
-      "type": "git",
-      "url": "https://github.com/babarbilal56/react-custom-hooks.git"
+        "type": "git",
+        "url": "git+https://github.com/babarbilal56/react-custom-hooks-utils.git"
     },
     "bugs": {
-      "url": "https://github.com/babarbilal56/react-custom-hooks/issues"
+        "url": "https://github.com/babarbilal56/react-custom-hooks-utils/issues"
     },
-    "homepage": "https://github.com/babarbilal56/react-custom-hooks#readme"
-  }
+    "homepage": "https://github.com/babarbilal56/react-custom-hooks-utils#readme"
+}
