@@ -9,3 +9,6 @@ export { default as useHover } from './useHover';
 export { default as useTimeout } from './useTimeout';
 export { default as useForm } from './useForm';
 export {Each} from './Each';
+export {useGeoLocation} from './useGeoLocation';
+export { default as useDocumentTitle } from './useDocumentTitle';
+
