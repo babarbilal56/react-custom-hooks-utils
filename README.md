@@ -153,6 +153,56 @@ const { values, errors, handleChange, handleSubmit } = useForm(
 - `handleChange`: Updates state on input change.
 - `handleSubmit`: Validates and submits form data.
 
+### 12. Access and Track Geolocation (`useGeoLocation`)
+
+```javascript
+import { useGeoLocation } from 'react-custom-hooks-utils';
+
+const LocationComponent = () => {
+  // Call the hook with options (optional) and watch set to true
+  const { loading, coordinates, error, isWatching } = useGeoLocation(
+    { enableHighAccuracy: true, timeout: 5000 }, // Optional options
+    true // Set to true if you want to watch for location changes
+  );
+
+  if (loading) {
+    return <div>Loading location...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+
+  return (
+    <div>
+      <h3>Geolocation</h3>
+      <p>Latitude: {coordinates?.latitude}</p>
+      <p>Longitude: {coordinates?.longitude}</p>
+      <p>Watching: {isWatching ? 'Yes' : 'No'}</p>
+    </div>
+  );
+};
+```
+
+- `loading`: Whether the location is still being fetched.
+- `coordinates`: The current coordinates (if available).
+- `error`: An error object if the location request fails.
+- `isWatching`: Whether the hook is currently watching for location changes.
+
+### 13. Update Document Title (`useDocumentTitle`)
+
+```javascript
+import useDocumentTitle from 'react-custom-hooks-utils';
+
+const PageComponent = () => {
+  useDocumentTitle('My Page Title', true); // Set the title and revert on unmount
+
+  return <div>Content of the page</div>;
+};
+```
+
+- `title`: The title you want to set for the document.
+- `revertOnUnmount`: If true, the document title will revert to its previous value when the component unmounts.
 ## License
 
 This project is open-source and available under the MIT License.

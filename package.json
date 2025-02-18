@@ -1,6 +1,6 @@
 {
     "name": "react-custom-hooks-utils",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "This library contains a collection of reusable React custom hooks to simplify state management, side effects, and user interactions.",
     "main": "index.js",
     "scripts": {
