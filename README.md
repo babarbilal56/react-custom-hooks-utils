@@ -1,6 +1,6 @@
 # React Custom Hooks
 
-This repository contains a collection of reusable React custom hooks to simplify state management, side effects, and user interactions.
+This library contains a collection of reusable React custom hooks to simplify state management, side effects, and user interactions.
 
 ## Installation
 
