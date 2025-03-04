@@ -1,6 +1,6 @@
 {
     "name": "react-custom-hooks-utils",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "description": "This library contains a collection of reusable React custom hooks to simplify state management, side effects, and user interactions.",
     "main": "index.js",
     "scripts": {
@@ -25,9 +25,6 @@
     ],
     "author": "Babar Bilal",
     "license": "MIT",
-    "peerDependencies": {
-        "react-native": ">=0.60.0"
-    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/babarbilal56/react-custom-hooks-utils.git"

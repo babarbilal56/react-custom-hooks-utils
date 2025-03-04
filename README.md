@@ -194,7 +194,7 @@ const LocationComponent = () => {
 ### 13. Update Document Title (`useDocumentTitle`)
 
 ```javascript
-import useDocumentTitle from 'react-custom-hooks-utils';
+import {useDocumentTitle} from 'react-custom-hooks-utils';
 
 const PageComponent = () => {
   useDocumentTitle('My Page Title', true); // Set the title and revert on unmount
@@ -216,6 +216,8 @@ A hook to manage browser cookies with React state.
 
 #### Usage:
 ```javascript
+import { useCookie } from 'react-custom-hooks-utils';
+
 const [cookie, setCookie] = useCookie('theme', 'light');
 ```
 
@@ -236,6 +238,9 @@ A hook to manage dark mode preferences using `localStorage` and system settings.
 
 #### Usage:
 ```javascript
+
+import { useDarkMode } from 'react-custom-hooks-utils';
+
 const [isDarkMode, toggleDarkMode] = useDarkMode();
 ```
 
@@ -252,6 +257,8 @@ A hook to run a function at a set interval.
 
 #### Usage:
 ```javascript
+import { useInterval } from 'react-custom-hooks-utils';
+
 useInterval(() => {
   console.log('This runs every second');
 }, 1000);
@@ -270,6 +277,8 @@ A hook to detect if a specific key is being pressed.
 
 #### Usage:
 ```javascript
+import { useKeyPress } from 'react-custom-hooks-utils';
+
 const isEnterPressed = useKeyPress('Enter');
 ```
 
@@ -288,6 +297,8 @@ A hook to check if the current screen size matches a given media query.
 
 #### Usage:
 ```javascript
+import { useMediaQuery } from 'react-custom-hooks-utils';
+
 const isMobile = useMediaQuery('(max-width: 768px)');
 ```
 
@@ -306,6 +317,8 @@ A hook to throttle a function call, ensuring it executes at most once within a g
 
 #### Usage:
 ```javascript
+import { useThrottle } from 'react-custom-hooks-utils';
+
 const throttledFunction = useThrottle(() => console.log('Throttled'), 2000);
 ```
 
