@@ -205,6 +205,123 @@ const PageComponent = () => {
 
 - `title`: The title you want to set for the document.
 - `revertOnUnmount`: If true, the document title will revert to its previous value when the component unmounts.
+
+
+
+
+### 14. `useCookie`
+
+#### Description:
+A hook to manage browser cookies with React state.
+
+#### Usage:
+```javascript
+const [cookie, setCookie] = useCookie('theme', 'light');
+```
+
+#### Parameters:
+- `key` (string) – The name of the cookie.
+- `initialValue` (any) – The default value if the cookie is not set.
+
+#### Returns:
+- `cookie` – The current cookie value.
+- `setCookie(value, daysToExpire)` – Function to update the cookie value and set an expiration.
+
+---
+
+### 15. `useDarkMode`
+
+#### Description:
+A hook to manage dark mode preferences using `localStorage` and system settings.
+
+#### Usage:
+```javascript
+const [isDarkMode, toggleDarkMode] = useDarkMode();
+```
+
+#### Returns:
+- `isDarkMode` – Boolean indicating if dark mode is enabled.
+- `toggleDarkMode` – Function to toggle dark mode.
+
+---
+
+### 16. `useInterval`
+
+#### Description:
+A hook to run a function at a set interval.
+
+#### Usage:
+```javascript
+useInterval(() => {
+  console.log('This runs every second');
+}, 1000);
+```
+
+#### Parameters:
+- `callback` – Function to execute.
+- `delay` – Interval duration in milliseconds.
+
+---
+
+### 17. `useKeyPress`
+
+#### Description:
+A hook to detect if a specific key is being pressed.
+
+#### Usage:
+```javascript
+const isEnterPressed = useKeyPress('Enter');
+```
+
+#### Parameters:
+- `targetKey` (string) – The key to listen for.
+
+#### Returns:
+- `keyPressed` – Boolean indicating if the key is pressed.
+
+---
+
+### 18. `useMediaQuery`
+
+#### Description:
+A hook to check if the current screen size matches a given media query.
+
+#### Usage:
+```javascript
+const isMobile = useMediaQuery('(max-width: 768px)');
+```
+
+#### Parameters:
+- `query` (string) – CSS media query string.
+
+#### Returns:
+- `matches` – Boolean indicating if the query matches.
+
+---
+
+### 19. `useThrottle`
+
+#### Description:
+A hook to throttle a function call, ensuring it executes at most once within a given time frame.
+
+#### Usage:
+```javascript
+const throttledFunction = useThrottle(() => console.log('Throttled'), 2000);
+```
+
+#### Parameters:
+- `callback` – Function to be throttled.
+- `delay` – Time in milliseconds to wait before the function can be executed again.
+
+#### Returns:
+- A throttled version of the callback function.
+
+
+
+
+
+
+
 ## License
 
 This project is open-source and available under the MIT License.

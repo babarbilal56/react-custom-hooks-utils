@@ -11,4 +11,10 @@ export { default as useForm } from './src/useForm';
 export {Each} from './src/Each';
 export {useGeoLocation} from './src/useGeoLocation';
 export { default as useDocumentTitle } from './src/useDocumentTitle';
+export { default as useCookie } from './src/useCookie';
+export { default as useDarkMode } from './src/useDarkMode';
+export { default as useInterval } from './src/useInterval';
+export { default as useKeyPress } from './src/useKeyPress';
+export { default as useMediaQuery } from './src/useMediaQuery';
+export { default as useThrottle } from './src/useThrottle';
 
